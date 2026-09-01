@@ -1,0 +1,97 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Peach Docs",
+  "colors": {
+    "primary": "#FFA88B",
+    "light": "#FFCBBA",
+    "dark": "#FFA88B"
+  },
+  "favicon": {
+    "light": "/images/peach-favicon-32x32.svg",
+    "dark": "/images/peach-favicon-32x32.svg"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "index",
+              "onboarding",
+              "connect-a-shared-inbox"
+            ]
+          },
+          {
+            "group": "Using Peach",
+            "icon": "peach",
+            "pages": [
+              "tickets",
+              "ticket-details",
+              "knowledge-base",
+              "ai-assistant"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              {
+                "group": "Microsoft 365",
+                "pages": [
+                  "overview",
+                  "admin-setup",
+                  "permissions",
+                  "troubleshooting"
+                ]
+              }
+            ],
+            "icon": "plug"
+          },
+          {
+            "group": "Settings",
+            "icon": "gear",
+            "pages": [
+              "settings/my-profile",
+              "settings/team-management",
+              "settings/email-integration",
+              "settings/category-management"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/images/peach_logo_black.svg",
+    "dark": "/images/peach_logo_white.svg",
+    "href": "https://joinpeach.co"
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "fonts": {
+    "family": "Manrope"
+  },
+  "icons": {
+    "library": "lucide"
+  }
+}

@@ -1,0 +1,107 @@
+---
+title: "Permissions"
+---
+
+Peach requires several Microsoft Graph permissions to authenticate users, discover shared mailboxes, and send and receive email.
+
+## Why permissions are required
+
+Peach operates using shared inboxes commonly used by financial aid offices.
+
+These permissions allow Peach to:
+
+- Authenticate staff members
+- Discover shared mailboxes
+- Read incoming student emails
+- Send responses from approved mailboxes
+- Synchronize mailbox activity
+
+<Info>
+  Peach only accesses mailboxes that your organization explicitly authorizes.
+</Info>
+
+---
+
+## Required permissions
+
+| Permission | Type | Purpose |
+| --- | --- | --- |
+| Mail.ReadWrite | Application | Read emails and update message status |
+| Mail.Send | Application | Send emails from approved shared mailboxes |
+| MailboxSettings.Read | Application | Identify available shared mailboxes |
+| User.Read | Delegated | Authenticate users |
+| User.Read.All | Application | Retrieve mailbox and user information during setup |
+
+---
+
+## Permission details
+
+### Mail.ReadWrite
+
+Allows Peach to:
+
+- Import emails into Tickets
+- Mark messages as read
+- Synchronize mailbox status
+
+<Note>
+  Without this permission, Peach cannot display student emails inside the platform.
+</Note>
+
+---
+
+### Mail.Send
+
+Allows Peach to:
+
+- Send responses from shared mailboxes
+- Deliver AI-assisted drafts
+- Send messages directly from Tickets
+
+<Note>
+  This permission does not give Peach permission to send from arbitrary mailboxes. Access is controlled by your Microsoft configuration.
+</Note>
+
+---
+
+### MailboxSettings.Read
+
+Allows Peach to identify which shared mailboxes are available for connection.
+
+This improves onboarding and mailbox selection.
+
+---
+
+### User.Read
+
+Allows users to authenticate with Microsoft 365.
+
+Peach uses Microsoft authentication rather than requiring separate passwords.
+
+---
+
+### User.Read.All
+
+Allows Peach to retrieve mailbox information necessary during onboarding.
+
+This permission is used to help identify available shared mailboxes.
+
+---
+
+## Security considerations
+
+<Warning>
+  Some Microsoft tenants apply additional restrictions to emails sent by applications.
+</Warning>
+
+In certain environments, outbound messages may generate a Non-Delivery Report (NDR) until Microsoft mail flow policies are updated.
+
+If outbound email delivery fails, see the [Troubleshooting](/troubleshooting) guide.
+
+---
+
+## Need help?
+
+<Info>
+  Experiencing issues with your Microsoft integration? Visit the [Troubleshooting](/troubleshooting) guide for solutions to common setup, mailbox, and email delivery issues.
+</Info>

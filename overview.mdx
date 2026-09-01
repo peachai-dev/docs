@@ -1,0 +1,97 @@
+---
+title: "Overview"
+---
+
+Peach integrates directly with Microsoft 365 to help financial aid offices manage shared inboxes, collaborate on student communications, and authenticate users through their institutional accounts.
+
+## What Peach uses Microsoft for
+
+Peach uses Microsoft 365 for three primary functions:
+
+<CardGroup cols={3}>
+  <Card title="Authentication" icon="shield-check">
+    Users sign in securely using their Microsoft 365 credentials.
+  </Card>
+
+  <Card title="Shared mailboxes" icon="mailbox-flag-up">
+    Peach reads incoming emails from approved shared mailboxes.
+  </Card>
+
+  <Card title="Email sending" icon="send">
+    Peach sends responses directly from your shared mailbox.
+  </Card>
+</CardGroup>
+
+---
+
+## How it works
+
+<Steps>
+  <Step title="Student emails your office">
+    Incoming messages arrive in your shared mailbox, such as [financialaid@college.edu](mailto:financialaid@college.edu).
+  </Step>
+  <Step title="Peach imports the email">
+    Peach automatically synchronizes incoming emails and creates tickets.
+  </Step>
+  <Step title="Staff review and respond">
+    Team members can collaborate, use AI-generated drafts, and reference institutional policies.
+  </Step>
+  <Step title="Response is sent">
+    Emails are delivered directly from your shared mailbox through Microsoft 365.
+  </Step>
+</Steps>
+
+---
+
+## What Peach can access
+
+Peach only accesses resources that your organization explicitly authorizes.
+
+<Info>
+  Peach does not require access to individual user inboxes.
+</Info>
+
+Typical mailbox examples include:
+
+- [finaid@college.edu](mailto:finaid@college.edu)
+- [financialaid@college.edu](mailto:financialaid@college.edu)
+- [scholarships@college.edu](mailto:scholarships@college.edu)
+
+---
+
+## Security model
+
+Peach is registered as an Enterprise Application within Microsoft Entra.
+
+Access is controlled through:
+
+- Microsoft user assignments
+- Microsoft security groups
+- Peach role permissions
+
+Only users assigned to the Peach application can access the platform.
+
+---
+
+## Before you begin
+
+To connect Peach, your organization will need:
+
+- Microsoft 365
+- Microsoft Entra administrator access
+- At least one shared mailbox
+- Users assigned to the Peach application
+
+---
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Admin setup" icon="badge-check" href="https://docs.joinpeach.co/admin-setup">
+    Register Peach in Microsoft Entra and grant permissions.
+  </Card>
+
+  <Card title="Permissions" icon="shield" href="https://docs.joinpeach.co/permissions">
+    Review the permissions Peach requires and why.
+  </Card>
+</CardGroup>
