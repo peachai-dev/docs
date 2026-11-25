@@ -28,7 +28,7 @@
             "group": "Using Peach",
             "icon": "compass",
             "pages": [
-              "tickets",
+              "cases",
               "ticket-details",
               "knowledge-base",
               "ai-assistant"
