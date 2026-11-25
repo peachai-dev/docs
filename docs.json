@@ -29,7 +29,7 @@
             "icon": "compass",
             "pages": [
               "cases",
-              "ticket-details",
+              "case-details",
               "knowledge-base",
               "ai-assistant"
             ]
