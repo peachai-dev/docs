@@ -53,9 +53,8 @@
             "group": "Settings",
             "icon": "settings",
             "pages": [
-              "settings/my-profile",
-              "settings/team-management",
-              "settings/email-integration",
+              "settings/general",
+              "settings/members",
               "settings/category-management"
             ]
           }
