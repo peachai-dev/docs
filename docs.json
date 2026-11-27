@@ -31,7 +31,8 @@
               "cases",
               "case-details",
               "knowledge-base",
-              "ai-assistant"
+              "ai-assistant",
+              "knowledge-base-2"
             ]
           },
           {
@@ -55,7 +56,7 @@
             "pages": [
               "settings/general",
               "settings/members",
-              "settings/category-management"
+              "settings/categories"
             ]
           }
         ]
